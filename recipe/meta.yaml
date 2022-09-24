@@ -1,4 +1,4 @@
-{% set version = "3.2.1" %}
+{% set version = "3.2.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/WeMix_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/WeMix/WeMix_{{ version }}.tar.gz
-  sha256: e6de04886217f53eee41c9172949a0f20e8594db4153a1493745c696d5e1fd78
+  sha256: b2d415dcfc8171aed4f72958b0b2fe0998437873be5f4f1d1ac396ba5e5c905a
 
 build:
   merge_build_host: true  # [win]
